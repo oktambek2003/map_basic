@@ -9,16 +9,20 @@ Return list_to_map variable
 
 Map func(List lst1, List lst2) {
   int i = 0;
-    Map list_to_map;
-      list_to_map = {lst1[i]: lst2[i]};
-      list_to_map = {lst1[i + 1]: lst2[i + 1]};
-      list_to_map = {lst1[i + 2]: lst2[i + 2]};
-      list_to_map = {lst1[i + 3]: lst2[i + 3]};
-      return list_to_map;
-    
-
+  var list_to_map = {};
+  while (lst1.length > i) {
+    list_to_map[lst1[i]] = lst2[i];
+    list_to_map[lst1[i + 1]] = lst2[i + 1];
+    list_to_map[lst1[i + 2]] = lst2[i + 2];
+    list_to_map[lst1[i + 3]] = lst2[i + 3];
+    list_to_map[lst1[i + 4]] = lst2[i + 4];
+    return list_to_map;
+  }
+  i++;
+  Map x = {1: 'ee'};
+  return x;
 }
 
 void main() {
-  print(func([1, 2, 3], ['oktaam', 'oktam', 'lochin']));
+  print(func([1, 2, 3, 4,5], ['oktaam', 'oktam', 'lochin', 'oooo','five']));
 }
