@@ -3,12 +3,10 @@
   Create a map called data then return it
 
 */
+import 'dart:core';
 
-Map func(Map data) {
-
-  return data;
+void main( ) {
+Map  data = {1: 'oktam'};
+  print(data.runtimeType);
 }
 
-void main() {
-  print(func({}));
-}
