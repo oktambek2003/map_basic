@@ -6,8 +6,8 @@ Then return the map.
 
 */
 
-bool func() {
-  Map dct = {"oktam": 'toxtayev'};
+bool func(Map dct) {
+ 
   if (dct.length == 1) {
     return true;
   }
@@ -15,5 +15,5 @@ bool func() {
 }
 
 void main() {
-  print(func());
+  print(func({}));
 }
