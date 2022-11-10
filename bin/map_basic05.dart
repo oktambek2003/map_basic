@@ -6,9 +6,12 @@ Then return the map.
 
 */
 
-Map func() {
-  Map dct={"oktam":'toxtayev'};
-  return dct;
+bool func() {
+  Map dct = {"oktam": 'toxtayev'};
+  if (dct.length == 1) {
+    return true;
+  }
+  return false;
 }
 
 void main() {
